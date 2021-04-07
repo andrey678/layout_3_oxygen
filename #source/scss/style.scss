@@ -3,7 +3,11 @@
 // Подключение шрифтов
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;900&display=swap');
 
+.page {
 
+}
+
+// Секция header
 .header {
 	background: #ffffff;
 	&__top {}
@@ -51,20 +55,18 @@
 		text-align:center;
 	}
 }
-.container {
-	
-}
+
 .logo {
 	&_line {}
 	&__link {}
 	&__img {}
 }
+
 .menu {
 	&__list {
 		width: 589px;
 		display: flex;
 		justify-content: space-between;
-
 	}
 	&__list-item {}
 	&__link {
@@ -90,8 +92,10 @@
 		}
 	}
 }
+
+// Секция about
 .about {
-	border: 1px solid #000;
+	
 	&__inner {
 		padding: 143px 0 159px 0;
 		width: 1170px;
@@ -130,11 +134,11 @@
 		top: 89px;
 		background: #FCBB08;
 	}
-
 }
 
+// Секция Expertise
 .expertise {
-	border: 1px solid #000;
+	
 	&__content {
 		display: flex;
 		justify-content: space-between;
@@ -153,8 +157,6 @@
 		position: relative;
 		width: 370px;
 		height: 2px;
-		// left: 0px;
-		// top: 0px;
 		background: #F0F0F0;
 	}
 	&__progress-bar {
@@ -216,27 +218,25 @@
 		color: #777777;
 	}
 }
-
 .page {
 	&__expertise {
 		width: 1170px;
 		margin: 0 auto;
 		padding: 142px 0 165px;
 	}
-.container {
 }
-.title {
-}
+
+// Секция features
 .features {
+	
 	&__img {
 		display:block;
 		max-width: 705px;
 		height: 100%;
 	}
 	&__inner {
-		padding:101px 135px 180px 130px;
-		
-
+		padding:101px 0px 180px 0px;
+		margin:0 0 0 100px;
 	}
 	&__title {
 		width: 427px;
@@ -248,8 +248,6 @@
 		letter-spacing: -1.65px;
 		color: #242121;
 		position:relative;
-
-
 		&:after {
 			content:'';
 			position: absolute;
@@ -258,10 +256,8 @@
 			left: 0px;
 			top: 155px;
 			background: #FCBB08;
-	}
-
-
-	}
+			}
+}
 	&__text {
 		margin: 67px 0 0 0;
 		font-family: 'Open Sans', sans-serif;
@@ -276,16 +272,12 @@
 .page {
 	&__features {
 		display: flex;
-
-
 	}
 }
-.container {
-}
-.title {
-}
 
+// Секция portfolio
 .portfolio {
+	
 	&__head {
 		width: 1174px;
 		margin:0 auto;
@@ -293,13 +285,13 @@
 		justify-content: space-between;
 		align-items: center;
 		padding:139px 0 103px;
-
 	}
 	&__links {
 		width: 560px;
 		display: flex;
 		justify-content: space-between;
 	}
+
 	&__link {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
@@ -321,123 +313,503 @@
 			}
 		}
 	}
+	&__row {
+	display: flex;
+	max-height: 992px;
+	margin: 0 0 72px 0;
+	justify-content: space-between;
+	}
+	&__column {
+		display: flex;
+		flex: 0 1 25%;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 22px 0 0;
+		max-height: 992px;
+		&:last-child{
+			margin:0;
+		}
+	}
 
 	
-
-	&__items {
+	&__item {
 		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
-	&__items-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height:912px;
-	width:343px;
+	&__item-img {}
+	&__image {
+		max-width:100%
 	}
-	&__item-img {
-		width: 343px;
-		// height: 494px;
-		background: #EDEDED;
-		&:nth-child(1){
-			background:url('../../img/Portfolio/01.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 494px;
-		}
-		&:nth-child(2){
-			background:url('../../img/Portfolio/02.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 288px;
-		}
-		&:nth-child(3){
-			background:url('../../img/Portfolio/3.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 367px;
-		}
-		&:nth-child(4){
-			background:url('../../img/Portfolio/4.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 318px;
-		}
-		&:nth-child(5){
-			background:url('../../img/Portfolio/5.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 395px;
-		}
-		&:nth-child(6){
-			background:url('../../img/Portfolio/6.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 288px;
-		}
-		&:nth-child(7){
-			background:url('../../img/Portfolio/7.jpg')0 0 no-repeat;
-			max-width:343px;
-			height: 292px;
-		}
-		&:nth-child(8){}
-		&:nth-child(9){}
+	&__item-title {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 14px;
+		letter-spacing: 1.4px;
+		color: #FFFFFF;
+	}
 
-
+	&__item-description {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 1px;
+		color: #FFFFFF;
 	}
-	&__item-title {}
-	&__item-description {}
-	&__btn-full {}
+
+	&__btn-full {
+		width: 100%;
+		height: 100px;
+		background: #F6F8FA;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 1.2px;
+		color: #242121;
+	}
 }
-.container {
-}
-.title {
-}
+// Секция video
 
 .video {
-	&__quote {}
-	&__quote-author {}
-	&__content {}
+	
+
+	&__text-content {
+		width:100%;
+		padding:130px 0 148px 0;
+		display: flex;
+		flex-direction: column;
+
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+		}
+	&__quote {
+		font-family: 'Merriweather', serif;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 36px;
+		color: #242121;
+		margin:0 0 51px 0;
+		max-width: 650.5px;
+	}
+	&__quote-author {
+		font-family: 'Merriweather', serif;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 32px;
+		color: #9E9E9E;
+		text-align:center;
+	}
+	&__content {
+		background:url('../../img/Video/video-bg.png')0 0/cover no-repeat;
+		height:324px;
+	}
+	&__btn {
+		display: block;
+		background: url('../../img/Video/Icons/play.png')center no-repeat;
+		width:100%;
+		height:100%;
+	}
 }
+
+// Секция Statistics
+
 .statistics {
-	&__inner {}
+	
+	padding:164px 0 166px 0;
+	&__inner {
+		display:flex;
+		max-width:985px;
+		margin:0 auto;
+		justify-content: space-between;
+	}
 	&__item {}
-	&__item-num {}
-	&__item-text {}
+	&__item-num {
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 73px;
+		color: #242121;
+		margin:0 0 9px 0;
+	}
+	&__item-text {
+		font-family: Open Sans;
+		font-size: 14px;
+		line-height: 19px;
+		color: #00B2A0;
+	}
 }
+
+// секция Slider
 .slider {
-	&__item {}
-	&__item-title {}
-	&__item-text {}
+	background: #F6F8FA;
+	padding:307px 37px 114px 38px;
+	&__item {
+	}
+	&__item-title {
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 52px;
+		color: #242121;
+		max-width:704px;
+		max-height: 104px;
+		margin: 0 0 0 133px;
+	}
+	&__item-nav {
+		display:flex;
+		justify-content: space-between;
+	}
+	&__item-arrow {
+		  
+		&:first-child{
+			background: url('../../img/Slider/Icons/Shape.png')0 0 no-repeat;
+			display: block;
+			width: 35px;
+			height:35px;
+		}
+		&:last-child{
+			background: url('../../img/Slider/Icons/arrow-right.png')0 0 no-repeat;
+			display: block;
+			width: 35px;
+			height:35px;
+		}
+	}
+	&__item-text {
+		font-family: Open Sans;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		color: #777777;
+		max-width:630px;
+		text-align:left;
+		margin: 0 0 197px 133px;
+	}
+	&__triggers {
+		display: flex;
+		max-width: 123px;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 0 133px;
+	}
+	&__trigger {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: #242121;
+		opacity: 0.4;
+		&_active {
+			width: 10px;
+			height: 10px;
+			background: #242121;
+			border-radius: 50%;
+			opacity:1;
+		}
 }
+}
+
+
+// Секция TEAM
+
 .team {
-	&__items {}
-	&__item {}
-	&__item-img {}
-	&__item-name {}
-	&__item-position {}
+	padding:120px 0 164px 0;
+	&__title{
+		margin: 0 auto 102px;
+		max-width: 1170px;
+	}
+	&__items {
+		margin:0 auto;
+		max-width: 1170px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__item-img {
+		margin: 0 0 35px 0;
+	}
+	&__item-name {
+		margin: 0 0 12px 0;
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #333333;
+	}
+	&__item-position {
+		font-family: Open Sans;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 16px;
+		color: #C2C2C2;
+
+	}
 }
+
+// Секция Pricing
+
 .pricing {
-	&_btn {}
-	&__items {}
-	&__item {}
-	&__item-name {}
-	&__item-rate {}
-	&__rate-period {}
-	&__list {}
+	padding: 144px 135px 162px 135px;
+	background: #F6F8FA;
+	&__title{
+		max-width: 1170px;
+		margin:0 auto 91px;
+	}
+	&__items {
+		max-width: 1170px;
+		margin:0 auto;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__item {
+		background: #ffffff;
+		width: 370px;
+		height:583px;
+		padding: 24px 25px 53px 25px;
+
+
+	}
+	&__item-name {
+		font-family: Open Sans;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		color: #242121;
+
+	}
+	&__item-rate {
+		text-align:center;
+		margin:0 0 51px 0;
+		font-family: Open Sans;
+		font-weight: 300;
+		font-size: 80px;
+		line-height: 109px;
+		color: #242121;
+		padding: 0 0 0 25px;
+		position: relative;
+		
+		&:before{
+			content: '$';
+			position: absolute;
+			width: 23px;
+			height: 54px;
+			left: 75.5px;
+			top: 15px;
+
+			font-family: Open Sans;
+			font-weight: 300;
+			font-size: 40px;
+			line-height: 54px;
+			color: #242121;
+
+		}
+
+
+	}
+	
+	&__rate-period {
+		font-family: Open Sans;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 27px;
+		color: #242121;
+		&_basic {
+			visibility: hidden;
+		}
+	}
+	&__list {
+		margin: 0 0 69px 0;
+		text-align:center;
+	}
+	&__list-item {
+		font-family: Open Sans;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 22px;
+		color: #242121;
+		margin: 0 0 30px 0;
+		&:last-child{
+			margin:0;
+		}
+	}
+	&__btn {
+		display: block;
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 1.2px;
+		color: #242121;
+		text-align:center;
+	}
 }
+
+
+
+// Секци CONTACT
 .contact {
-	&__content {}
-	&__form {}
-	&__form-input {}
-	&__form-btn {}
+	
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content {
+		padding:145px 0 162px 0;
+		margin:0 auto;
+	}
+	&__title{
+		margin:0 0 94px 0;
+	}
+	&__form {
+		
+	}
+	&__form-input {
+		font-family: Open Sans;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 3.70909px;
+		color: #B8B8B8;
+		width:569px;
+		height:38px;
+		border-bottom:2px solid #373A39;
+		display: flex;
+		margin:0 0 32px 0;
+		&:nth-child(2){
+			margin: 0 0 53px 0;
+		}
+
+		&_textarea {
+			width: 569px;
+			height: 156px;
+		}
+	}
+	&__form-btn {
+		width: 230px;
+		height: 45px;
+		background: #242121;
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 2px;
+		color: #FFFFFF;
+
+	}
 	&__map {}
+	&__map-img {}
 }
+
+// Секция FOOTER
+
+.footer {
+	padding:110px 0 0 0;
+	background: #373A39;
+	&__content {
+		max-width: 692px;
+		margin: 0 auto;
+	}
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 65px 0;
+	}
+	&__social-link {
+		font-family: Montserrat;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 4px;
+		color: #FFFFFF;
+
+	}
+	&__bottom {
+		font-family: Open Sans;
+		font-size: 14px;
+		line-height: 32px;
+		text-align: center;
+		color: #A8A8A8;
+	}
+	&__address {}
+	&__phone {
+		display: block;
+		color: #A8A8A8;
+	}
+	&__email {
+		display: block;
+		color: #A8A8A8;
+		margin: 0 0 57px 0;
+	}
+	&__to-top-btn {
+		background:url('../../img/Footer/Icons/angle-up.png') 0 0 no-repeat;
+		width: 17px;
+		height: 9px;
+		display: block;
+		margin: 0 auto 60px;
+	}
+	&__copy {
+		font-family: Open Sans;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		color: #CCCCCC;
+		background: #2A2C2B;
+		padding:43px 0 41px 0;
+	}
+}
+
+.logo {
+
+	&_line {
+		
+		
+		&:after{
+			content: '';
+			display: block;
+			width:150px;
+			height:2px;
+			background: #FCBB08;
+			margin:0 auto 73px;
+		}
+
+	}
+	&__link {
+		display: block;
+		text-align:center;
+	}
+	&__img {
+		margin:0 0 25px 0;
+	}
+}
+
+
 .footer {
 	&__content {}
 	&__social {}
 	&__social-link {}
+	
 	&__address {}
 	&__phone {}
 	&__email {}
 	&__to-top-btn {}
 	&__copy {}
 }
+.container {
 }
-
-
-
-
+.logo {
+	&_line {}
+	&__link {}
+	&__img {}
+}
