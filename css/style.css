@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 26px 53px 26px 52px; }
   .header__content {
-    background: url("../../img/Header/Header-bg.png") 0 0/cover no-repeat;
+    background: url("../img/Header/Header-bg.png") 0 0/cover no-repeat;
     padding: 213px 0 62px 0; }
   .header__content-inner {
     display: -webkit-box;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin: 0 0 179.5px 0; }
   .header__content-decor {
-    background: url("../../img/Header/Icons/mouse.png") 0 0 no-repeat;
+    background: url("../img/Header/Icons/mouse.png") 0 0 no-repeat;
     width: 26px;
     height: 43px;
     text-align: center; }
@@ -487,12 +487,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .video__content {
-  background: url("../../img/Video/video-bg.png") 0 0/cover no-repeat;
+  background: url("../img/Video/video-bg.png") 0 0/cover no-repeat;
   height: 324px; }
 
 .video__btn {
   display: block;
-  background: url("../../img/Video/Icons/play.png") center no-repeat;
+  background: url("../img/Video/Icons/play.png") center no-repeat;
   width: 100%;
   height: 100%; }
 
@@ -540,12 +540,12 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .slider__item-arrow:first-child {
-    background: url("../../img/Slider/Icons/Shape.png") 0 0 no-repeat;
+    background: url("../img/Slider/Icons/Shape.png") 0 0 no-repeat;
     display: block;
     width: 35px;
     height: 35px; }
   .slider__item-arrow:last-child {
-    background: url("../../img/Slider/Icons/arrow-right.png") 0 0 no-repeat;
+    background: url("../img/Slider/Icons/arrow-right.png") 0 0 no-repeat;
     display: block;
     width: 35px;
     height: 35px; }
@@ -782,7 +782,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #A8A8A8;
     margin: 0 0 57px 0; }
   .footer__to-top-btn {
-    background: url("../../img/Footer/Icons/angle-up.png") 0 0 no-repeat;
+    background: url("../img/Footer/Icons/angle-up.png") 0 0 no-repeat;
     width: 17px;
     height: 9px;
     display: block;
