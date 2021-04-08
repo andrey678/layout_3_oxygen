@@ -1,8 +1,20 @@
 // Файл обнуляющих стилей
 @import "nullstyle.scss";
 // Подключение шрифтов
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700;900&display=swap');
 
+@mixin font($font_name, $file_name, $weight, $style) {
+
+@font-face {
+font-family: $font_name;
+font-display: swap;
+src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+font-weight: #{$weight};
+font-style: #{$style};
+}
+}
+
+@import "fonts";
 .page {
 
 }
@@ -20,7 +32,7 @@
 		padding: 26px 53px 26px 52px;
 	}
 	&__content {
-		background:url('../../img/Header/Header-bg.png')0 0/cover no-repeat;
+		background:url('../img/Header/Header-bg.png')0 0/cover no-repeat;
 		padding:213px 0 62px 0;
 	}
 	&__content-inner {
@@ -93,9 +105,10 @@
 	}
 }
 
+
 // Секция about
 .about {
-	
+	background: #F6F8FA;
 	&__inner {
 		padding: 143px 0 159px 0;
 		width: 1170px;
@@ -375,6 +388,7 @@
 		color: #242121;
 	}
 }
+
 // Секция video
 
 .video {
@@ -410,12 +424,12 @@
 		text-align:center;
 	}
 	&__content {
-		background:url('../../img/Video/video-bg.png')0 0/cover no-repeat;
+		background:url('../img/Video/video-bg.png')0 0/cover no-repeat;
 		height:324px;
 	}
 	&__btn {
 		display: block;
-		background: url('../../img/Video/Icons/play.png')center no-repeat;
+		background: url('../img/Video/Icons/play.png')center no-repeat;
 		width:100%;
 		height:100%;
 	}
@@ -449,6 +463,7 @@
 	}
 }
 
+
 // секция Slider
 .slider {
 	background: #F6F8FA;
@@ -472,13 +487,13 @@
 	&__item-arrow {
 		  
 		&:first-child{
-			background: url('../../img/Slider/Icons/Shape.png')0 0 no-repeat;
+			background: url('../img/Slider/Icons/Shape.png')0 0 no-repeat;
 			display: block;
 			width: 35px;
 			height:35px;
 		}
 		&:last-child{
-			background: url('../../img/Slider/Icons/arrow-right.png')0 0 no-repeat;
+			background: url('../img/Slider/Icons/arrow-right.png')0 0 no-repeat;
 			display: block;
 			width: 35px;
 			height:35px;
@@ -516,6 +531,7 @@
 		}
 }
 }
+
 
 
 // Секция TEAM
@@ -557,6 +573,8 @@
 
 	}
 }
+
+
 
 // Секция Pricing
 
@@ -658,8 +676,7 @@
 }
 
 
-
-// Секци CONTACT
+// Секция CONTACT
 .contact {
 	
 	&__inner{
@@ -711,6 +728,7 @@
 	&__map {}
 	&__map-img {}
 }
+
 
 // Секция FOOTER
 
@@ -797,23 +815,4 @@
 	&__img {
 		margin:0 0 25px 0;
 	}
-}
-
-.footer {
-	&__content {}
-	&__social {}
-	&__social-link {}
-	&__bottom {}
-	&__address {}
-	&__phone {}
-	&__email {}
-	&__to-top-btn {}
-	&__copy {}
-}
-.container {
-}
-.logo {
-	&_line {}
-	&__link {}
-	&__img {}
 }
