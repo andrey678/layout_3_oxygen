@@ -760,16 +760,19 @@
 		margin: 0 auto 60px;
 	}
 	&__copy {
+		background: #2A2C2B;
+		padding:43px 0 41px 0;
+	}
+	&__copy-content {
 		font-family: Open Sans;
 		font-size: 12px;
 		line-height: 16px;
 		text-align: center;
 		color: #CCCCCC;
-		background: #2A2C2B;
-		padding:43px 0 41px 0;
 		max-width: 692px;
 		margin: 0 auto;
 	}
+
 }
 
 .logo {
@@ -796,3 +799,21 @@
 	}
 }
 
+.footer {
+	&__content {}
+	&__social {}
+	&__social-link {}
+	&__bottom {}
+	&__address {}
+	&__phone {}
+	&__email {}
+	&__to-top-btn {}
+	&__copy {}
+}
+.container {
+}
+.logo {
+	&_line {}
+	&__link {}
+	&__img {}
+}
